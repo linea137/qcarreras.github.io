@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_10faa3895d504f8297be213694629047 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_10faa3895d504f8297be213694629047" ></div>
+        
+</body>
+<script>    
+    
+            var map_10faa3895d504f8297be213694629047 = L.map(
+                "map_10faa3895d504f8297be213694629047",
+                {
+                    center: [-38.9728093, -67.8348739],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c0b01bccccde49eaa484413522f56664 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var marker_c9a56e8d57eb42e987cb68768c598dc6 = L.marker(
+                [-39.0, -80.0],
+                {}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var icon_b6769ef7ad634e1fa3e33600368072df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "green", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9a56e8d57eb42e987cb68768c598dc6.setIcon(icon_b6769ef7ad634e1fa3e33600368072df);
+        
+    
+        var popup_01bbbd9028f14ef0b4559fff6eeaacb8 = L.popup({"maxWidth": 1000});
+
+        
+            var i_frame_0b8115b98a104dee998f88e006b94146 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICBOdWVzdHJhIGVzdHJhdGVnaWEgZXMgY29tZW56YXIgcG9yIGxhcyBjaXVkYWRlcyBlbiB2ZXJkZSwgcGFyYSBjb250aW51YXIgbHVlZ28gY29uIGxhcyBjaXVkYWRlcyBlbiByb2pvLCBoYWJpZW5kbyBoYWJpZG8geWEgZWZlY3RvcyBwb3NpdGl2b3MgZW4gbGFzIGltcGxlbWVudGFjaW9uZXMgaW5pY2lhbGVzLiBFc3BlcmFtb3MgZGUgZXN0YSBtYW5lcmEgZ2VuZXJhciB1biBlZmVjdG8gZGVtb3N0cmFjacOzbiBwb3NpdGl2by4=" width="200" style="border:none !important;" height="200"></iframe>`)[0];
+            popup_01bbbd9028f14ef0b4559fff6eeaacb8.setContent(i_frame_0b8115b98a104dee998f88e006b94146);
+        
+
+        marker_c9a56e8d57eb42e987cb68768c598dc6.bindPopup(popup_01bbbd9028f14ef0b4559fff6eeaacb8)
+        ;
+
+        
+    
+    
+            var circle_marker_aa1a516062d241ec9948603e358d6aba = L.circleMarker(
+                [-31.44769675, -69.88272787183107],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_4df03ef98133487a9ecee0d7f026fa0b = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_dfeff615ce3243dca1c72a24dd435770 = $(`<div id="html_dfeff615ce3243dca1c72a24dd435770" style="width: 100.0%; height: 100.0%;">Calingasta es una localidad de 8500 habitantes cerca de El Pachón y Los Azules, en una provincia de tradición minera</div>`)[0];
+            popup_4df03ef98133487a9ecee0d7f026fa0b.setContent(html_dfeff615ce3243dca1c72a24dd435770);
+        
+
+        circle_marker_aa1a516062d241ec9948603e358d6aba.bindPopup(popup_4df03ef98133487a9ecee0d7f026fa0b)
+        ;
+
+        
+    
+    
+            circle_marker_aa1a516062d241ec9948603e358d6aba.bindTooltip(
+                `<div>
+                     Calingasta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b651fe1339824b82a53055cb2b9ab9aa = L.circleMarker(
+                [-29.58889925, -69.47955427377856],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_f28203a833ef4b5bbb5f9148fffe0710 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_ec7b56a82b974ff288ceed9980366b0c = $(`<div id="html_ec7b56a82b974ff288ceed9980366b0c" style="width: 100.0%; height: 100.0%;">Iglesia es una localidad sanjuanina de menos de quinientos habitantes cerca de los proyectos de Josemaría, Pascua Lama y la mina operativa Veladero, que se encuentra en etapas finales luego de un historial de accidentes medioambientales. </div>`)[0];
+            popup_f28203a833ef4b5bbb5f9148fffe0710.setContent(html_ec7b56a82b974ff288ceed9980366b0c);
+        
+
+        circle_marker_b651fe1339824b82a53055cb2b9ab9aa.bindPopup(popup_f28203a833ef4b5bbb5f9148fffe0710)
+        ;
+
+        
+    
+    
+            circle_marker_b651fe1339824b82a53055cb2b9ab9aa.bindTooltip(
+                `<div>
+                     Iglesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f90b48d4a6e04620a5be66519aaae841 = L.circleMarker(
+                [-47.728528499999996, -65.93459529044861],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_612f49da986240879a0bb63926d9676c = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_82064ba687ba4b03ac5e941d52ac405c = $(`<div id="html_82064ba687ba4b03ac5e941d52ac405c" style="width: 100.0%; height: 100.0%;">Puerto Deseado, de 14000 habitantes, ya tiene relación y acuerdos positivos con la minera Yamana por el proyecto de Cerro Moro</div>`)[0];
+            popup_612f49da986240879a0bb63926d9676c.setContent(html_82064ba687ba4b03ac5e941d52ac405c);
+        
+
+        circle_marker_f90b48d4a6e04620a5be66519aaae841.bindPopup(popup_612f49da986240879a0bb63926d9676c)
+        ;
+
+        
+    
+    
+            circle_marker_f90b48d4a6e04620a5be66519aaae841.bindTooltip(
+                `<div>
+                     Puerto Deseado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06b2c64d8bd74452b7fcb98e6dc16f06 = L.circleMarker(
+                [-46.578694999999996, -70.93349871076681],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_b995806930cc4e7fa1120266f4080230 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_4d714bf44810423980e9cd7deabec334 = $(`<div id="html_4d714bf44810423980e9cd7deabec334" style="width: 100.0%; height: 100.0%;">Perito Moreno, localidad de 4600 habitantes, se encuentra cercana a proyectos mineros en Cerro Negro</div>`)[0];
+            popup_b995806930cc4e7fa1120266f4080230.setContent(html_4d714bf44810423980e9cd7deabec334);
+        
+
+        circle_marker_06b2c64d8bd74452b7fcb98e6dc16f06.bindPopup(popup_b995806930cc4e7fa1120266f4080230)
+        ;
+
+        
+    
+    
+            circle_marker_06b2c64d8bd74452b7fcb98e6dc16f06.bindTooltip(
+                `<div>
+                     Perito Moreno
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_709c98e7443c451db497caa11f05055c = L.circleMarker(
+                [-35.4752134, -69.585934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_5a32e428bd904cc0b21803d1b2fd2a70 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_3f2bc347d6ac4d8fb3a86df7c4f3549f = $(`<div id="html_3f2bc347d6ac4d8fb3a86df7c4f3549f" style="width: 100.0%; height: 100.0%;">Recientemente, la localidad de Malargüe, de 28000 habitantes, se ha negado, a la par de la provincia, al avance del proyecto Hierro Indio, en el Cerro Sosneado. Dentro del departamento se encuentra el centro de ski Las Leñas</div>`)[0];
+            popup_5a32e428bd904cc0b21803d1b2fd2a70.setContent(html_3f2bc347d6ac4d8fb3a86df7c4f3549f);
+        
+
+        circle_marker_709c98e7443c451db497caa11f05055c.bindPopup(popup_5a32e428bd904cc0b21803d1b2fd2a70)
+        ;
+
+        
+    
+    
+            circle_marker_709c98e7443c451db497caa11f05055c.bindTooltip(
+                `<div>
+                     Malargüe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_089c05e371564807ab45a60dab28f016 = L.circleMarker(
+                [-42.9173055, -71.3216508],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_3918ae3586ad460198a45b6c6b41f8c8 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_a6d6c739d2b84efe88bf3105f362738b = $(`<div id="html_a6d6c739d2b84efe88bf3105f362738b" style="width: 100.0%; height: 100.0%;">Esquel, de 35mil habitantes, en linea con la provincia, tiene un historial conflictivo con la actividad minera, cerca de proyectos de alto potencial, como Suyai</div>`)[0];
+            popup_3918ae3586ad460198a45b6c6b41f8c8.setContent(html_a6d6c739d2b84efe88bf3105f362738b);
+        
+
+        circle_marker_089c05e371564807ab45a60dab28f016.bindPopup(popup_3918ae3586ad460198a45b6c6b41f8c8)
+        ;
+
+        
+    
+    
+            circle_marker_089c05e371564807ab45a60dab28f016.bindTooltip(
+                `<div>
+                     Esquel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a2bab9221e2e4f348ffea8001305a035 = L.circleMarker(
+                [-42.2631553, -69.2219873],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_ebd30d2de4fb4baf9d5269215b0e3b79 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_cd0eb72defce47379e76c26a717af024 = $(`<div id="html_cd0eb72defce47379e76c26a717af024" style="width: 100.0%; height: 100.0%;">La localidad de Gastre, de casi 2mil personas, se encuentra cercana al proyecto Navidad, uno de los más importantes del país</div>`)[0];
+            popup_ebd30d2de4fb4baf9d5269215b0e3b79.setContent(html_cd0eb72defce47379e76c26a717af024);
+        
+
+        circle_marker_a2bab9221e2e4f348ffea8001305a035.bindPopup(popup_ebd30d2de4fb4baf9d5269215b0e3b79)
+        ;
+
+        
+    
+    
+            circle_marker_a2bab9221e2e4f348ffea8001305a035.bindTooltip(
+                `<div>
+                     Gastre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ecc093a8bc6641c0b56ed150757cb80d = L.circleMarker(
+                [-27.5830261, -66.3154994],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_31e7299575434e768c54fe1291b6207a = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_25fa9db3955c47c3bb45976efd547f6b = $(`<div id="html_25fa9db3955c47c3bb45976efd547f6b" style="width: 100.0%; height: 100.0%;">Cerca del proyecto Agua Rica, esta localidad de casi 12000 habitantes se encuentra en una provincia con tradición minera</div>`)[0];
+            popup_31e7299575434e768c54fe1291b6207a.setContent(html_25fa9db3955c47c3bb45976efd547f6b);
+        
+
+        circle_marker_ecc093a8bc6641c0b56ed150757cb80d.bindPopup(popup_31e7299575434e768c54fe1291b6207a)
+        ;
+
+        
+    
+    
+            circle_marker_ecc093a8bc6641c0b56ed150757cb80d.bindTooltip(
+                `<div>
+                     Andalgalá
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_22a5f56447a24d478fa715dfb157c7e5 = L.circleMarker(
+                [-31.75261645, -70.43079111385796],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_acff0742833a4325ba6b83a948265d84 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_4cec752dfe9441138dbf321da90c20ea = $(`<div id="html_4cec752dfe9441138dbf321da90c20ea" style="width: 100.0%; height: 100.0%;">El Pachón es uno de los proyectos de mayor potencial del país. Su puesta en marcha implicaría un aumento de la producción minera del país en un 55% según estimaciones oficiales</div>`)[0];
+            popup_acff0742833a4325ba6b83a948265d84.setContent(html_4cec752dfe9441138dbf321da90c20ea);
+        
+
+        circle_marker_22a5f56447a24d478fa715dfb157c7e5.bindPopup(popup_acff0742833a4325ba6b83a948265d84)
+        ;
+
+        
+    
+    
+            circle_marker_22a5f56447a24d478fa715dfb157c7e5.bindTooltip(
+                `<div>
+                     El Pachón
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fe5e4d004f1449c91dcf04132745d62 = L.circleMarker(
+                [-34.7540349, -69.9719098],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_259e46958a964d78af5dbbcb0ee4c447 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_d2a884957ba74d50bf4c254ef03b0e1d = $(`<div id="html_d2a884957ba74d50bf4c254ef03b0e1d" style="width: 100.0%; height: 100.0%;">Proyecto en conflicto con localidades</div>`)[0];
+            popup_259e46958a964d78af5dbbcb0ee4c447.setContent(html_d2a884957ba74d50bf4c254ef03b0e1d);
+        
+
+        circle_marker_6fe5e4d004f1449c91dcf04132745d62.bindPopup(popup_259e46958a964d78af5dbbcb0ee4c447)
+        ;
+
+        
+    
+    
+            circle_marker_6fe5e4d004f1449c91dcf04132745d62.bindTooltip(
+                `<div>
+                     Proyecto Hierro Indio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_53cd582c71de4d62876d0d9858d1aa01 = L.circleMarker(
+                [-48.1314277, -66.6531978],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_66c8120fbf3c4097b15149ab0fc165b4 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_c8a3de70f60e4361b7137d1f40ff6455 = $(`<div id="html_c8a3de70f60e4361b7137d1f40ff6455" style="width: 100.0%; height: 100.0%;">El proyecto de Cerro Moro, para la extracción de oro, se encuentra avanzando firmemente de mano de la empresa Yamana Gold. La misma ha avanzado en acuerdos con las autoridades de localidades cercanas con respecto a transferencias directas ante la explotación.</div>`)[0];
+            popup_66c8120fbf3c4097b15149ab0fc165b4.setContent(html_c8a3de70f60e4361b7137d1f40ff6455);
+        
+
+        circle_marker_53cd582c71de4d62876d0d9858d1aa01.bindPopup(popup_66c8120fbf3c4097b15149ab0fc165b4)
+        ;
+
+        
+    
+    
+            circle_marker_53cd582c71de4d62876d0d9858d1aa01.bindTooltip(
+                `<div>
+                     Cerro Moro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a052b1375ede44b1a6a150affd7b4961 = L.circleMarker(
+                [-24.5894782, -67.3966467],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_54d9a97b3c9d466ea3251cc44ecc120c = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_f317e8f0d4f14514a98d43d088713128 = $(`<div id="html_f317e8f0d4f14514a98d43d088713128" style="width: 100.0%; height: 100.0%;">El poblado de menos de 200 habitantes se encuentra cercano al proyecto de alto potencial, Taca Taca </div>`)[0];
+            popup_54d9a97b3c9d466ea3251cc44ecc120c.setContent(html_f317e8f0d4f14514a98d43d088713128);
+        
+
+        circle_marker_a052b1375ede44b1a6a150affd7b4961.bindPopup(popup_54d9a97b3c9d466ea3251cc44ecc120c)
+        ;
+
+        
+    
+    
+            circle_marker_a052b1375ede44b1a6a150affd7b4961.bindTooltip(
+                `<div>
+                     Tolar Grande
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e2602a11cefb4a159d5bfaf9a7948ffc = L.circleMarker(
+                [-29.318087, -70.013267],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_7dd38d31de47449b8794d7aaa856d3dd = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_e09c04f211a24a1dbdc421bddc29a26d = $(`<div id="html_e09c04f211a24a1dbdc421bddc29a26d" style="width: 100.0%; height: 100.0%;">El proyecto conjunto con Chile, Pascua Lama, es también muy atractivo. Principalmente proyectado para la extracción de oro, estimaciones oficiales indican que su puesta en marcha aumentaría las producción minera del país en un 14%.</div>`)[0];
+            popup_7dd38d31de47449b8794d7aaa856d3dd.setContent(html_e09c04f211a24a1dbdc421bddc29a26d);
+        
+
+        circle_marker_e2602a11cefb4a159d5bfaf9a7948ffc.bindPopup(popup_7dd38d31de47449b8794d7aaa856d3dd)
+        ;
+
+        
+    
+    
+            circle_marker_e2602a11cefb4a159d5bfaf9a7948ffc.bindTooltip(
+                `<div>
+                     Pascua Lama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_864c4ba42c11438bb5ef71a2824ea771 = L.circleMarker(
+                [-28.46, -69.5],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_4fb364793f04414984b60c9df2c4f166 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_c119458489654b498a5c6f71f80c808c = $(`<div id="html_c119458489654b498a5c6f71f80c808c" style="width: 100.0%; height: 100.0%;">El proyecto de Josemaría, principalmente de cobre, pero también de oro y plata, es de alto potencial y se encuentra dando señales de avance hacia la etapa de operaciones. Estimaciones oficiales indican que su puesta en marcha aumentaría las producción minera del país en un 32%.</div>`)[0];
+            popup_4fb364793f04414984b60c9df2c4f166.setContent(html_c119458489654b498a5c6f71f80c808c);
+        
+
+        circle_marker_864c4ba42c11438bb5ef71a2824ea771.bindPopup(popup_4fb364793f04414984b60c9df2c4f166)
+        ;
+
+        
+    
+    
+            circle_marker_864c4ba42c11438bb5ef71a2824ea771.bindTooltip(
+                `<div>
+                     Josemaría
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8fa219092380413eab193de9b2c23cae = L.circleMarker(
+                [-46.876812, -70.210454],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_7d3317a3111f44d9bcbf8004dbbcf3de = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_4bec8c92f91b4002ad3b217020661d25 = $(`<div id="html_4bec8c92f91b4002ad3b217020661d25" style="width: 100.0%; height: 100.0%;">Cerro Negro está situado en el noroeste de la región conocida como Macizo del Deseado,​ un distrito geológico de unos 75 000 km2 de gran potencialidad, considerado de “interés especial minero” por la Legislatura de la Provincia de Santa Cruz, por sus reservas de oro y plata.</div>`)[0];
+            popup_7d3317a3111f44d9bcbf8004dbbcf3de.setContent(html_4bec8c92f91b4002ad3b217020661d25);
+        
+
+        circle_marker_8fa219092380413eab193de9b2c23cae.bindPopup(popup_7d3317a3111f44d9bcbf8004dbbcf3de)
+        ;
+
+        
+    
+    
+            circle_marker_8fa219092380413eab193de9b2c23cae.bindTooltip(
+                `<div>
+                     Cerro Negro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a9f60814d9743a9a8cd6fc9d6ec82f7 = L.circleMarker(
+                [-42.727594, -71.258407],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_d8937ec00302477cb416f5547ae5a139 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_3825f26c1b8045b0998a78f4d829207a = $(`<div id="html_3825f26c1b8045b0998a78f4d829207a" style="width: 100.0%; height: 100.0%;">El caso de Suyai es especialmente interesante. La provincia de Chubut se ha pronunciado contra la megaminería a través de la Ley 5001. En la ciudad de Esquel, en 2014, la compañía minera a cargo de la exploración del proyecto Suyai propuso la adaptación de la minería subterránea y sin el uso de cianuro, para poder llevar a cabo la actividad de manera compatible con las demandas locales. Sin embargo, la actividad no progresó y, a pesar de los intentos del gobierno de promover el diálogo hacia una posible aceptación social de la actividad, las comunidades locales se mantuvieron firmes en su posición.</div>`)[0];
+            popup_d8937ec00302477cb416f5547ae5a139.setContent(html_3825f26c1b8045b0998a78f4d829207a);
+        
+
+        circle_marker_3a9f60814d9743a9a8cd6fc9d6ec82f7.bindPopup(popup_d8937ec00302477cb416f5547ae5a139)
+        ;
+
+        
+    
+    
+            circle_marker_3a9f60814d9743a9a8cd6fc9d6ec82f7.bindTooltip(
+                `<div>
+                     Suyai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc8666d431cb4c62a85ffc9bd1e30054 = L.circleMarker(
+                [-42.415, -68.82],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_1ec8879dc2b7402f9e5098c1b4184378 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_d42c7c5729584d34b668a078c9449181 = $(`<div id="html_d42c7c5729584d34b668a078c9449181" style="width: 100.0%; height: 100.0%;">Se está buscando intensamente su desarrollo, ya que es uno de los depósitos de plata sin desarrollar más grandes del mundo, con el presidente tratando de aumentar la aceptación de la actividad, pero las protestas locales siguen legitimando y validando las leyes antiminería de su provincia. El inicio de este proyecto solo se traduciría en un aumento de más del 11% en las exportaciones totales del sector, lo que representa una producción anual de cerca de 400 millones de dólares, lo que se traduciría en alrededor de 30 millones de dólares en impuestos a la exportación directamente, y agregue mucho más al tener en cuenta todos los demás impuestos directos y aumentos indirectos en la recaudación de impuestos debido al aumento de la actividad económica.</div>`)[0];
+            popup_1ec8879dc2b7402f9e5098c1b4184378.setContent(html_d42c7c5729584d34b668a078c9449181);
+        
+
+        circle_marker_dc8666d431cb4c62a85ffc9bd1e30054.bindPopup(popup_1ec8879dc2b7402f9e5098c1b4184378)
+        ;
+
+        
+    
+    
+            circle_marker_dc8666d431cb4c62a85ffc9bd1e30054.bindTooltip(
+                `<div>
+                     Navidad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_750941c498524eae943f236516c7e522 = L.circleMarker(
+                [-31.018152, -70.219537],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_7003b394e62a4a1abd4d6f73b07a3236 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_8610656003eb4781a1dc5ad9a19bacbe = $(`<div id="html_8610656003eb4781a1dc5ad9a19bacbe" style="width: 100.0%; height: 100.0%;">El proyecto de Los Azules es de alto potencial, estimaciones oficiales indican que su puesta en marcha aumentaría las producción minera del país en un 28%</div>`)[0];
+            popup_7003b394e62a4a1abd4d6f73b07a3236.setContent(html_8610656003eb4781a1dc5ad9a19bacbe);
+        
+
+        circle_marker_750941c498524eae943f236516c7e522.bindPopup(popup_7003b394e62a4a1abd4d6f73b07a3236)
+        ;
+
+        
+    
+    
+            circle_marker_750941c498524eae943f236516c7e522.bindTooltip(
+                `<div>
+                     Los Azules
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92ad7e968a094c8ba44387ae9ed3e193 = L.circleMarker(
+                [-27.37333333, -66.31277778],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_9268d431ae1c4e6c8db678947385f277 = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_b46c972ed00f47c99671e6619329f9bc = $(`<div id="html_b46c972ed00f47c99671e6619329f9bc" style="width: 100.0%; height: 100.0%;">El proyecto de Agua Rica es de alto potencial, estimaciones oficiales indican que su puesta en marcha aumentaría las producción minera del país en un 35%</div>`)[0];
+            popup_9268d431ae1c4e6c8db678947385f277.setContent(html_b46c972ed00f47c99671e6619329f9bc);
+        
+
+        circle_marker_92ad7e968a094c8ba44387ae9ed3e193.bindPopup(popup_9268d431ae1c4e6c8db678947385f277)
+        ;
+
+        
+    
+    
+            circle_marker_92ad7e968a094c8ba44387ae9ed3e193.bindTooltip(
+                `<div>
+                     Agua Rica
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0488a704ba5746fa83eaec7ad9690924 = L.circleMarker(
+                [-24.50353, -67.887382],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+        var popup_ecf9b12edb914990bd7c0896688b183a = L.popup({"maxWidth": 400, "minWidth": 400});
+
+        
+            var html_8c26d66332294e85ab0aa6fb82bfa356 = $(`<div id="html_8c26d66332294e85ab0aa6fb82bfa356" style="width: 100.0%; height: 100.0%;">El proyecto de Taca Taca es de alto potencial, estimaciones oficiales indican que su puesta en marcha aumentaría las producción minera del país en un 49%</div>`)[0];
+            popup_ecf9b12edb914990bd7c0896688b183a.setContent(html_8c26d66332294e85ab0aa6fb82bfa356);
+        
+
+        circle_marker_0488a704ba5746fa83eaec7ad9690924.bindPopup(popup_ecf9b12edb914990bd7c0896688b183a)
+        ;
+
+        
+    
+    
+            circle_marker_0488a704ba5746fa83eaec7ad9690924.bindTooltip(
+                `<div>
+                     Taca Taca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba82a7bb6fc64f49a3ccd78d3db627ca = L.circleMarker(
+                [-39.692636, -58.669846],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var circle_marker_d916f519bfcb4ba3a142a075204c90b2 = L.circleMarker(
+                [-41.692636, -58.669846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var circle_marker_aa7d01570de34f098e1d748de0e55118 = L.circleMarker(
+                [-43.692636, -58.669846],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var marker_28379fad7ac644e08d4522a02c29bbf1 = L.marker(
+                [-39.3, -58.0],
+                {}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var div_icon_753cd0f7c33441428a7ad17f5f7d5099 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 8pt\"\u003eCiudades con mayor apoyo social a la miner\u00eda\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [200, 200]});
+            marker_28379fad7ac644e08d4522a02c29bbf1.setIcon(div_icon_753cd0f7c33441428a7ad17f5f7d5099);
+        
+    
+            var marker_7fd910a63a4845edaf004051045b023e = L.marker(
+                [-41.3, -58.0],
+                {}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var div_icon_f094205b4fd84898bac916e1b99c3006 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 8pt\"\u003eCiudades con menor apoyo social a la miner\u00eda\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [200, 200]});
+            marker_7fd910a63a4845edaf004051045b023e.setIcon(div_icon_f094205b4fd84898bac916e1b99c3006);
+        
+    
+            var marker_54fc668754d14b0f919f543621a4c2f5 = L.marker(
+                [-43.3, -58.0],
+                {}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var div_icon_84700c7f2ee04ad69d48d61059af4ea8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 8pt\"\u003eProyectos mineros\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [200, 200]});
+            marker_54fc668754d14b0f919f543621a4c2f5.setIcon(div_icon_84700c7f2ee04ad69d48d61059af4ea8);
+        
+    
+            var marker_fad6e0b3d57a4674916e1914794a9086 = L.marker(
+                [-23.0, -90.0],
+                {}
+            ).addTo(map_10faa3895d504f8297be213694629047);
+        
+    
+            var div_icon_5597fc72bad5421dbdf8a97049e761cc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 14pt;color : black\"\u003eProyectos mineros y localidades cercanas\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [200, 200]});
+            marker_fad6e0b3d57a4674916e1914794a9086.setIcon(div_icon_5597fc72bad5421dbdf8a97049e761cc);
+        
+</script>
